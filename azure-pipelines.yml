@@ -1,0 +1,76 @@
+
+trigger:
+- master
+
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - master
+
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build for master
+  branches:
+    include:
+      - master
+
+jobs:
+- job: Stable
+  strategy:
+    matrix:
+      Python38Ubuntu:
+        imageName: 'ubuntu-18.04'
+        python.version: 3.8
+      Python37Ubuntu:
+        imageName: 'ubuntu-18.04'
+        python.version: 3.7
+      Python36Ubuntu:
+        imageName: 'ubuntu-18.04'
+        python.version: 3.6
+      Python38macOS:
+        imageName: 'macOS-10.14'
+        python.version: 3.8
+      Python37macOS:
+        imageName: 'macOS-10.14'
+        python.version: 3.7
+      Python36macOS:
+        imageName: 'macOS-latest'
+        python.version: 3.6
+
+  pool:
+    vmImage: $(imageName)
+
+  steps:
+    - bash: echo "##vso[task.prependpath]$CONDA/bin"
+      displayName: Add Conda to path
+
+    # On Hosted macOS, the agent user doesn't have ownership of Miniconda's installation directory/
+    # We need to take ownership if we want to update conda or install packages globally
+    - bash: sudo chown -R $USER $CONDA
+      displayName: Take ownership of conda installation
+      condition: eq( variables['Agent.OS'], 'Darwin' )
+
+    - bash: |
+        conda config --set always_yes yes --set changeps1 no
+        conda config --add channels omnia
+        conda config --add channels janschulz
+        conda config --add channels mosdef
+        conda config --add channels conda-forge
+        conda update -c defaults conda
+        conda update --all
+        conda create --yes -n test-environment python=$(python.version) --file requirements.txt
+      displayName: Create a new test environment
+
+    - bash: |
+        source activate test-environment
+        python -m pip install --user pytest-azurepipelines
+        python -m pytest element/tests -v
+      displayName: Run Tests
+
+    - bash: |
+        source activate bleeding-test-environment
+        coverage xml
+        bash <(curl -s https://codecov.io/bash) -t eff72552-77c7-4b39-99be-4d25b521ba1b
+      condition: and( eq( variables['Agent.OS'], 'Linux' ), eq( variables['python.version'], '3.8' ) )
+      displayName: Upload coverage
