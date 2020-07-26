@@ -54,19 +54,24 @@ jobs:
     - bash: |
         conda config --set always_yes yes --set changeps1 no
         conda config --add channels conda-forge
-        conda update -c defaults conda
-        conda update --all
-        conda create --yes -n test-environment python=$(python.version) --file requirements-dev.txt
-      displayName: Create a new test environment
+        conda update conda -yq
+      displayName: Add relevant channels
+
+    - bash: |
+        conda create -n test-environment
+        source activate test-environment
+        conda install --yes python=$(python.version) --file requirements-test.txt
+        pip install -e .
+      displayName: Install requirements and testing branch
+
 
     - bash: |
         source activate test-environment
-        python -m pytest element/tests -v --cov=element/.
+        python -m pytest -v --cov=element --cov-report=html --pyargs element --no-coverage-upload
       displayName: Run Tests
 
     - bash: |
-        source activate bleeding-test-environment
-        coverage xml
-        bash <(curl -s https://codecov.io/bash) -t eff72552-77c7-4b39-99be-4d25b521ba1b
+        source activate test-environment
+        bash <(curl -s https://codecov.io/bash)
       condition: and( eq( variables['Agent.OS'], 'Linux' ), eq( variables['python.version'], '3.8' ) )
       displayName: Upload coverage
