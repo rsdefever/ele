@@ -79,3 +79,7 @@ class TestElement(BaseTest):
         assert na.atomic_number == 11
         assert na.name == "sodium"
         assert na.symbol == "Na"
+
+    def test_repr(self):
+        na = element_from_mass(22.98)
+        print(na)
