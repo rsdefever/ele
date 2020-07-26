@@ -6,7 +6,7 @@ from pathlib import Path
 
 from element.exceptions import ElementError
 
-JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
+ELEMENTS_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.txt')
 
 class Element(namedtuple("Element", "atomic_number, name, symbol, mass")):
     """Chemical element object
@@ -161,8 +161,9 @@ def element_from_mass(mass, exact=True):
 
 # RSD TODO: Where did these values come from???
 elements = []
-with open(JSON_PATH) as json_file:
-    elements_dict = json.load(json_file)
+with open(ELEMENTS_PATH) as el_txt:
+    els_str = el_txt.read()
+    elements_dict = json.loads(els_str)
 
 for element_name, element_properties in elements_dict.items():
     elements.append(
