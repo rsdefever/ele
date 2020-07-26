@@ -1,11 +1,12 @@
 import json
 import warnings
-from re import sub
 
 from collections import namedtuple
+from pathlib import Path
 
 from element.exceptions import ElementError
 
+JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
 
 class Element(namedtuple("Element", "atomic_number, name, symbol, mass")):
     """Chemical element object
@@ -160,7 +161,7 @@ def element_from_mass(mass, exact=True):
 
 # RSD TODO: Where did these values come from???
 elements = []
-with open("lib/elements.json") as json_file:
+with open(JSON_PATH) as json_file:
     elements_dict = json.load(json_file)
 
 for element_name, element_properties in elements_dict.items():
