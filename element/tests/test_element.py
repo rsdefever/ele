@@ -8,11 +8,10 @@ from element import element_from_mass
 from element.tests.base_test import BaseTest
 
 from element.exceptions import ElementError
-from element.element import Sodium, Magnesium
 
 
 class TestElement(BaseTest):
-    def test_element_from_symbol(self):
+    def test_element_from_symbol(self, Sodium):
         na = element_from_symbol("Na")
         assert na == Sodium
         na = element_from_symbol("na")
@@ -28,7 +27,7 @@ class TestElement(BaseTest):
         with pytest.raises(TypeError):
             na = element_from_symbol(11)
 
-    def test_element_from_name(self):
+    def test_element_from_name(self, Sodium):
         na = element_from_name("sodium")
         assert na == Sodium
         na = element_from_name("Sodium")
@@ -44,7 +43,7 @@ class TestElement(BaseTest):
         with pytest.raises(TypeError):
             na = element_from_name(11)
 
-    def test_element_from_atomic_number(self):
+    def test_element_from_atomic_number(self, Sodium):
         na = element_from_atomic_number(11)
         assert na == Sodium
 
@@ -56,7 +55,7 @@ class TestElement(BaseTest):
         with pytest.raises(ElementError):
             na = element_from_atomic_number(300)
 
-    def test_element_from_mass(self):
+    def test_element_from_mass(self, Sodium, Magnesium):
         na = element_from_mass(22.98)
         assert na == Sodium
         with pytest.warns(UserWarning):
@@ -80,3 +79,7 @@ class TestElement(BaseTest):
         assert na.atomic_number == 11
         assert na.name == "sodium"
         assert na.symbol == "Na"
+
+    def test_repr(self):
+        na = element_from_mass(22.98)
+        print(na)

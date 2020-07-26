@@ -1,2 +1,12 @@
+import pytest
+
+from element.element import elements
+
 class BaseTest:
-    pass
+    @pytest.fixture
+    def Sodium(self):
+        return elements[10]
+
+    @pytest.fixture
+    def Magnesium(self):
+        return elements[11]
