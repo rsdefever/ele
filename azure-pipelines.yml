@@ -56,13 +56,12 @@ jobs:
         conda config --add channels conda-forge
         conda update -c defaults conda
         conda update --all
-        conda create --yes -n test-environment python=$(python.version) --file requirements.txt
+        conda create --yes -n test-environment python=$(python.version) --file requirements-dev.txt
       displayName: Create a new test environment
 
     - bash: |
         source activate test-environment
-        python -m pip install --user pytest-azurepipelines
-        python -m pytest element/tests -v --cov=./
+        python -m pytest element/tests -v --cov=element/.
       displayName: Run Tests
 
     - bash: |
