@@ -67,6 +67,7 @@ jobs:
 
     - bash: |
         source activate test-environment
+        pip install pytest-azurepipelines
         python -m pytest -v --cov=element --cov-report=html --pyargs element --no-coverage-upload
       displayName: Run Tests
 
