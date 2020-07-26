@@ -6,7 +6,7 @@ Element
 |Azure|
 
 .. |Codecov| image:: https://codecov.io/gh/rsdefever/element/branch/master/graph/badge.svg
-.. |Azure| image:: https://dev.azure.com/rsdefever/_apis/build/status/rsdefever.element?branchName=master
+.. |Azure| image:: https://dev.azure.com/rdefever/element/_apis/build/status/rsdefever.element?branchName=master
 .. |License| image:: https://img.shields.io/github/license/rsdefever/element
 
 Overview
