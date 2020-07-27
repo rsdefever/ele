@@ -1,4 +1,5 @@
 import json
+from enum import Enum, unique
 import warnings
 
 from collections import namedtuple
@@ -178,3 +179,17 @@ symbol_dict = {element.symbol: element for element in elements}
 name_dict = {element.name: element for element in elements}
 atomic_dict = {element.atomic_number: element for element in elements}
 mass_dict = {round(element.mass, 1): element for element in elements}
+
+
+class Elements(namedtuple('Elements', 'symbols_dict')):
+    def __init__(self, symbols_dict):
+        super(Elements, self).__init__()
+        for key, value in symbols_dict.items():
+            setattr(self, key, value)
+
+    def __getattr__(self, item):
+        if item not in self.symbols_dict:
+            raise AttributeError(f'Element with symbol "{item}" does not exist')
+
+
+Elements = Elements(symbols_dict=symbol_dict)

@@ -4,6 +4,7 @@ from element import element_from_symbol
 from element import element_from_name
 from element import element_from_atomic_number
 from element import element_from_mass
+from element import Elements
 
 from element.tests.base_test import BaseTest
 
@@ -83,3 +84,7 @@ class TestElement(BaseTest):
     def test_repr(self):
         na = element_from_mass(22.98)
         print(na)
+
+    def test_elements_enum(self):
+        for key, val in Elements.symbols_dict.items():
+            assert getattr(Elements, key) == val
