@@ -30,6 +30,7 @@ Usage
 from the symbol, the name, the atomic number, or the mass (in amu):
 
 .. code-block:: python
+
   import element
   na = element.element_from_symbol("Na")
   na = element.element_from_name("sodium")
@@ -44,6 +45,7 @@ Each ``Element`` has four attributes which can be accessed
 (as demonstrated below for ``na``):
 
 .. code-block:: python
+
   na.name
   na.symbol
   na.atomic_number
@@ -52,6 +54,7 @@ Each ``Element`` has four attributes which can be accessed
 The elements can also be accessed by symbol as follows:
 
 .. code-block:: python
+
   import element
   na = element.Elements.Na
 
@@ -64,6 +67,7 @@ Installation
 Installation is currently limited to source:
 
 .. code-block:: bash
+  
   git clone git@github.com/rsdefever/element.git
   cd element
   pip install .
