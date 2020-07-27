@@ -13,7 +13,7 @@ Overview
 ~~~~~~~~
 
 **Ele** is an extremely lightweight package that defines
-the **ele**ments of the periodic table and allows them to be accessed
+the **ele**\ ments of the periodic table and allows them to be accessed
 by symbol, name, atomic number, or mass. It has *zero dependencies*
 outside of the Python Standard Library.
 
