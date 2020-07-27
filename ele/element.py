@@ -5,7 +5,7 @@ import warnings
 from collections import namedtuple
 from pathlib import Path
 
-from element.exceptions import ElementError
+from ele.exceptions import ElementError
 
 JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
 

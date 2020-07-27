@@ -1,14 +1,14 @@
 import pytest
 
-from element import element_from_symbol
-from element import element_from_name
-from element import element_from_atomic_number
-from element import element_from_mass
-from element import Elements
+from ele import element_from_symbol
+from ele import element_from_name
+from ele import element_from_atomic_number
+from ele import element_from_mass
+from ele import Elements
 
-from element.tests.base_test import BaseTest
+from ele.tests.base_test import BaseTest
 
-from element.exceptions import ElementError
+from ele.exceptions import ElementError
 
 
 class TestElement(BaseTest):
