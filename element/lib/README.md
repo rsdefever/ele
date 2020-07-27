@@ -4,6 +4,8 @@ Atomic weights of the elements 2013 (IUPAC Technical Report), Juris Meija, Tyler
 
 Pure Appl. Chem. 2016; 88(3): 265-291, doi: 10.1515/pac-2015-0305
 
+A `.bib` file with the reference is also present in this directory.
+
 ## Details
 
 The values for `Element.mass` were taken from the abridged standard atomic weights (Table 2), with the following exceptions:
