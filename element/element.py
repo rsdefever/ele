@@ -181,7 +181,7 @@ atomic_dict = {element.atomic_number: element for element in elements}
 mass_dict = {round(element.mass, 1): element for element in elements}
 
 
-class Elements(namedtuple('DottedElements', 'symbols_dict')):
+class Elements(namedtuple('Elements', 'symbols_dict')):
     def __init__(self, symbols_dict):
         super(Elements, self).__init__()
         for key, value in symbols_dict.items():
