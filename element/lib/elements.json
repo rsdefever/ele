@@ -3,7 +3,7 @@
     "name": "hydrogen",
     "symbol": "H",
     "atomic number": 1,
-    "mass": 1.0079
+    "mass": 1.008
   },
   "helium": {
     "name": "helium",
@@ -15,7 +15,7 @@
     "name": "lithium",
     "symbol": "Li",
     "atomic number": 3,
-    "mass": 6.941
+    "mass": 6.94
   },
   "beryllium": {
     "name": "beryllium",
@@ -27,43 +27,43 @@
     "name": "boron",
     "symbol": "B",
     "atomic number": 5,
-    "mass": 10.811
+    "mass": 10.81
   },
   "carbon": {
     "name": "carbon",
     "symbol": "C",
     "atomic number": 6,
-    "mass": 12.0107
+    "mass": 12.011
   },
   "nitrogen": {
     "name": "nitrogen",
     "symbol": "N",
     "atomic number": 7,
-    "mass": 14.0067
+    "mass": 14.007
   },
   "oxygen": {
     "name": "oxygen",
     "symbol": "O",
     "atomic number": 8,
-    "mass": 15.9994
+    "mass": 15.999
   },
   "fluorine": {
     "name": "fluorine",
     "symbol": "F",
     "atomic number": 9,
-    "mass": 18.9984
+    "mass": 18.998
   },
   "neon": {
     "name": "neon",
     "symbol": "Ne",
     "atomic number": 10,
-    "mass": 20.1797
+    "mass": 20.180
   },
   "sodium": {
     "name": "sodium",
     "symbol": "Na",
     "atomic number": 11,
-    "mass": 22.9898
+    "mass": 22.990
   },
   "magnesium": {
     "name": "magnesium",
@@ -75,31 +75,31 @@
     "name": "aluminum",
     "symbol": "Al",
     "atomic number": 13,
-    "mass": 26.9815
+    "mass": 26.982
   },
   "silicon": {
     "name": "silicon",
     "symbol": "Si",
     "atomic number": 14,
-    "mass": 28.0855
+    "mass": 28.085
   },
   "phosphorus": {
     "name": "phosphorus",
     "symbol": "P",
     "atomic number": 15,
-    "mass": 30.9738
+    "mass": 30.974
   },
   "sulfur": {
     "name": "sulfur",
     "symbol": "S",
     "atomic number": 16,
-    "mass": 32.065
+    "mass": 32.06
   },
   "chlorine": {
     "name": "chlorine",
     "symbol": "Cl",
     "atomic number": 17,
-    "mass": 35.453
+    "mass": 35.45
   },
   "argon": {
     "name": "argon",
@@ -111,7 +111,7 @@
     "name": "potassium",
     "symbol": "K",
     "atomic number": 19,
-    "mass": 39.0983
+    "mass": 39.098
   },
   "calcium": {
     "name": "calcium",
@@ -123,7 +123,7 @@
     "name": "scandium",
     "symbol": "Sc",
     "atomic number": 21,
-    "mass": 44.9559
+    "mass": 44.956
   },
   "titanium": {
     "name": "titanium",
@@ -135,13 +135,13 @@
     "name": "vanadium",
     "symbol": "V",
     "atomic number": 23,
-    "mass": 50.9415
+    "mass": 50.942
   },
   "chromium": {
     "name": "chromium",
     "symbol": "Cr",
     "atomic number": 24,
-    "mass": 51.9961
+    "mass": 51.996
   },
   "manganese": {
     "name": "manganese",
@@ -159,13 +159,13 @@
     "name": "cobalt",
     "symbol": "Co",
     "atomic number": 27,
-    "mass": 58.9331
+    "mass": 58.933
   },
   "nickel": {
     "name": "nickel",
     "symbol": "Ni",
     "atomic number": 28,
-    "mass": 58.6934
+    "mass": 58.693
   },
   "copper": {
     "name": "copper",
@@ -177,7 +177,7 @@
     "name": "zinc",
     "symbol": "Zn",
     "atomic number": 30,
-    "mass": 65.409
+    "mass": 65.38
   },
   "gallium": {
     "name": "gallium",
@@ -189,19 +189,19 @@
     "name": "germanium",
     "symbol": "Ge",
     "atomic number": 32,
-    "mass": 72.64
+    "mass": 72.630
   },
   "arsenic": {
     "name": "arsenic",
     "symbol": "As",
     "atomic number": 33,
-    "mass": 74.9216
+    "mass": 74.922
   },
   "selenium": {
     "name": "selenium",
     "symbol": "Se",
     "atomic number": 34,
-    "mass": 78.96
+    "mass": 78.971
   },
   "bromine": {
     "name": "bromine",
@@ -219,7 +219,7 @@
     "name": "rubidium",
     "symbol": "Rb",
     "atomic number": 37,
-    "mass": 85.4678
+    "mass": 85.468
   },
   "strontium": {
     "name": "strontium",
@@ -231,7 +231,7 @@
     "name": "yttrium",
     "symbol": "Y",
     "atomic number": 39,
-    "mass": 88.9059
+    "mass": 88.906
   },
   "zirconium": {
     "name": "zirconium",
@@ -243,19 +243,19 @@
     "name": "niobium",
     "symbol": "Nb",
     "atomic number": 41,
-    "mass": 92.9064
+    "mass": 92.906
   },
   "molybdenum": {
     "name": "molybdenum",
     "symbol": "Mo",
     "atomic number": 42,
-    "mass": 95.94
+    "mass": 95.95
   },
   "technetium": {
     "name": "technetium",
     "symbol": "Tc",
     "atomic number": 43,
-    "mass": 98.0
+    "mass": 97.0
   },
   "ruthenium": {
     "name": "ruthenium",
@@ -267,7 +267,7 @@
     "name": "rhodium",
     "symbol": "Rh",
     "atomic number": 45,
-    "mass": 102.9055
+    "mass": 102.91
   },
   "palladium": {
     "name": "palladium",
@@ -279,19 +279,19 @@
     "name": "silver",
     "symbol": "Ag",
     "atomic number": 47,
-    "mass": 107.8682
+    "mass": 107.87
   },
   "cadmium": {
     "name": "cadmium",
     "symbol": "Cd",
     "atomic number": 48,
-    "mass": 112.411
+    "mass": 112.41
   },
   "indium": {
     "name": "indium",
     "symbol": "In",
     "atomic number": 49,
-    "mass": 114.818
+    "mass": 114.82
   },
   "tin": {
     "name": "tin",
@@ -309,55 +309,55 @@
     "name": "tellurium",
     "symbol": "Te",
     "atomic number": 52,
-    "mass": 127.6
+    "mass": 127.60
   },
   "iodine": {
     "name": "iodine",
     "symbol": "I",
     "atomic number": 53,
-    "mass": 126.9045
+    "mass": 126.90
   },
   "xenon": {
     "name": "xenon",
     "symbol": "Xe",
     "atomic number": 54,
-    "mass": 131.293
+    "mass": 131.29
   },
   "cesium": {
     "name": "cesium",
     "symbol": "Cs",
     "atomic number": 55,
-    "mass": 132.9055
+    "mass": 132.91
   },
   "barium": {
     "name": "barium",
     "symbol": "Ba",
     "atomic number": 56,
-    "mass": 137.327
+    "mass": 137.33
   },
   "lanthanum": {
     "name": "lanthanum",
     "symbol": "La",
     "atomic number": 57,
-    "mass": 138.9055
+    "mass": 138.91
   },
   "cerium": {
     "name": "cerium",
     "symbol": "Ce",
     "atomic number": 58,
-    "mass": 140.116
+    "mass": 140.12
   },
   "praseodymium": {
     "name": "praseodymium",
     "symbol": "Pr",
     "atomic number": 59,
-    "mass": 140.9077
+    "mass": 140.91
   },
   "neodymium": {
     "name": "neodymium",
     "symbol": "Nd",
     "atomic number": 60,
-    "mass": 144.242
+    "mass": 144.24
   },
   "promethium": {
     "name": "promethium",
@@ -375,7 +375,7 @@
     "name": "europium",
     "symbol": "Eu",
     "atomic number": 63,
-    "mass": 151.964
+    "mass": 151.96
   },
   "gadolinium": {
     "name": "gadolinium",
@@ -387,43 +387,43 @@
     "name": "terbium",
     "symbol": "Tb",
     "atomic number": 65,
-    "mass": 158.9254
+    "mass": 158.93
   },
   "dysprosium": {
     "name": "dysprosium",
     "symbol": "Dy",
     "atomic number": 66,
-    "mass": 162.5
+    "mass": 162.50
   },
   "holmium": {
     "name": "holmium",
     "symbol": "Ho",
     "atomic number": 67,
-    "mass": 164.9303
+    "mass": 164.93
   },
   "erbium": {
     "name": "erbium",
     "symbol": "Er",
     "atomic number": 68,
-    "mass": 167.259
+    "mass": 167.26
   },
   "thulium": {
     "name": "thulium",
     "symbol": "Tm",
     "atomic number": 69,
-    "mass": 168.9342
+    "mass": 168.93
   },
   "ytterbium": {
     "name": "ytterbium",
     "symbol": "Yb",
     "atomic number": 70,
-    "mass": 173.04
+    "mass": 173.05
   },
   "lutetium": {
     "name": "lutetium",
     "symbol": "Lu",
     "atomic number": 71,
-    "mass": 174.967
+    "mass": 174.97
   },
   "hafnium": {
     "name": "hafnium",
@@ -435,7 +435,7 @@
     "name": "tantalum",
     "symbol": "Ta",
     "atomic number": 73,
-    "mass": 180.9479
+    "mass": 180.95
   },
   "tungsten": {
     "name": "tungsten",
@@ -447,7 +447,7 @@
     "name": "rhenium",
     "symbol": "Re",
     "atomic number": 75,
-    "mass": 186.207
+    "mass": 186.21
   },
   "osmium": {
     "name": "osmium",
@@ -459,19 +459,19 @@
     "name": "iridium",
     "symbol": "Ir",
     "atomic number": 77,
-    "mass": 192.217
+    "mass": 192.22
   },
   "platinum": {
     "name": "platinum",
     "symbol": "Pt",
     "atomic number": 78,
-    "mass": 195.084
+    "mass": 195.08
   },
   "gold": {
     "name": "gold",
     "symbol": "Au",
     "atomic number": 79,
-    "mass": 196.9666
+    "mass": 196.97
   },
   "mercury": {
     "name": "mercury",
@@ -483,7 +483,7 @@
     "name": "thallium",
     "symbol": "Tl",
     "atomic number": 81,
-    "mass": 204.3833
+    "mass": 204.38
   },
   "lead": {
     "name": "lead",
@@ -495,7 +495,7 @@
     "name": "bismuth",
     "symbol": "Bi",
     "atomic number": 83,
-    "mass": 208.9804
+    "mass": 208.98
   },
   "polonium": {
     "name": "polonium",
@@ -537,19 +537,19 @@
     "name": "thorium",
     "symbol": "Th",
     "atomic number": 90,
-    "mass": 232.0381
+    "mass": 232.04
   },
   "proactinium": {
     "name": "proactinium",
     "symbol": "Pa",
     "atomic number": 91,
-    "mass": 231.0359
+    "mass": 231.04
   },
   "uranium": {
     "name": "uranium",
     "symbol": "U",
     "atomic number": 92,
-    "mass": 238.0289
+    "mass": 238.03
   },
   "neptunium": {
     "name": "neptunium",
@@ -621,37 +621,37 @@
     "name": "rutherfordium",
     "symbol": "Rf",
     "atomic number": 104,
-    "mass": 261.0
+    "mass": 267.0
   },
   "dubnium": {
     "name": "dubnium",
     "symbol": "Db",
     "atomic number": 105,
-    "mass": 262.0
+    "mass": 270.0
   },
   "seaborgium": {
     "name": "seaborgium",
     "symbol": "Sg",
     "atomic number": 106,
-    "mass": 266.0
+    "mass": 269.0
   },
   "bohrium": {
     "name": "bohrium",
     "symbol": "Bh",
     "atomic number": 107,
-    "mass": 264.0
+    "mass": 270.0
   },
   "hassium": {
     "name": "hassium",
     "symbol": "Hs",
     "atomic number": 108,
-    "mass": 277.0
+    "mass": 270.0
   },
   "meitnerium": {
     "name": "meitnerium",
     "symbol": "Mt",
     "atomic number": 109,
-    "mass": 268.0
+    "mass": 278.0
   },
   "darmstadtium": {
     "name": "darmstadtium",
@@ -663,7 +663,7 @@
     "name": "roentgenium",
     "symbol": "Rg",
     "atomic number": 111,
-    "mass": 272.0
+    "mass": 281.0
   },
   "copernicium": {
     "name": "copernicium",
@@ -675,11 +675,11 @@
     "name": "ununtrium",
     "symbol": "Uut",
     "atomic number": 113,
-    "mass": 284.0
+    "mass": 286.0
   },
-  "ununquadium": {
-    "name": "ununquadium",
-    "symbol": "Uuq",
+  "flerovium": {
+    "name": "flerovium",
+    "symbol": "Fl",
     "atomic number": 114,
     "mass": 289.0
   },
@@ -687,19 +687,19 @@
     "name": "ununpentium",
     "symbol": "Uup",
     "atomic number": 115,
-    "mass": 288.0
+    "mass": 289.0
   },
-  "ununhexium": {
-    "name": "ununhexium",
-    "symbol": "Uuh",
+  "livermorium": {
+    "name": "livermorium",
+    "symbol": "Lv",
     "atomic number": 116,
-    "mass": 292.0
+    "mass": 291.0
   },
   "ununseptium": {
     "name": "ununseptium",
     "symbol": "Uus",
     "atomic number": 117,
-    "mass": 291.0
+    "mass": 293.0
   },
   "ununoctium": {
     "name": "ununoctium",
