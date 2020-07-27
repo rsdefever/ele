@@ -76,7 +76,7 @@ class TestElement(BaseTest):
 
     def test_element_attributes(self):
         na = element_from_mass(22.98)
-        assert na.mass == 22.9898
+        assert na.mass == 22.99
         assert na.atomic_number == 11
         assert na.name == "sodium"
         assert na.symbol == "Na"

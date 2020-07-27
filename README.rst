@@ -35,7 +35,7 @@ from the symbol, the name, the atomic number, or the mass (in amu):
   na = element.element_from_symbol("Na")
   na = element.element_from_name("sodium")
   na = element.element_from_atomic_number(11)
-  na = element.element_from_mass(22.989)
+  na = element.element_from_mass(22.990)
 
 The mass is rounded to a single decimal before comparison. If you wish to
 retrieve the element with the mass closest to the specified value you
