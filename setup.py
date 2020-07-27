@@ -13,13 +13,13 @@ requirements = [
 ]
 
 setup(
-    name="element",
+    name="ele",
     version=__version__,
     packages=find_packages(),
     license="MIT",
     author="Ryan S. DeFever",
     author_email="rdefever@nd.edu",
-    url="https://github.com/rsdefever/element",
+    url="https://github.com/rsdefever/ele",
     install_requires=requirements,
     python_requires=">=3.6, <4",
 )
