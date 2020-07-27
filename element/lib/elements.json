@@ -255,7 +255,7 @@
     "name": "technetium",
     "symbol": "Tc",
     "atomic number": 43,
-    "mass": 98.0
+    "mass": 97.0
   },
   "ruthenium": {
     "name": "ruthenium",
@@ -393,7 +393,7 @@
     "name": "dysprosium",
     "symbol": "Dy",
     "atomic number": 66,
-    "mass": 162.5
+    "mass": 162.50
   },
   "holmium": {
     "name": "holmium",
@@ -543,7 +543,7 @@
     "name": "proactinium",
     "symbol": "Pa",
     "atomic number": 91,
-    "mass": 231.0359
+    "mass": 231.04
   },
   "uranium": {
     "name": "uranium",
