@@ -58,9 +58,6 @@ The elements can also be accessed by symbol as follows:
   import element
   na = element.Elements.Na
 
-Resources
-~~~~~~~~~
-
 Installation
 ~~~~~~~~~~~~
 
@@ -73,6 +70,12 @@ Installation is currently limited to source:
   pip install .
 
 ``pip`` and ``conda`` installations are coming soon!
+
+Data Sources
+~~~~~~~~~~~~
+
+Complete details of the sources are provided `here <https://github.com/rsdefever/element/blob/master/element/lib/README.md>`_
+
 
 Credits
 ~~~~~~~
