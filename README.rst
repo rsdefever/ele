@@ -12,8 +12,8 @@ Ele
 Overview
 ~~~~~~~~
 
-**Ele** is an extremely lightweight package that defines
-the **ele**\ ments of the periodic table and allows them to be accessed
+**Ele**\ ment is an extremely lightweight package that defines
+the elements of the periodic table and allows them to be accessed
 by symbol, name, atomic number, or mass. It has *zero dependencies*
 outside of the Python Standard Library.
 
