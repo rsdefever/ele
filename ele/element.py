@@ -47,6 +47,12 @@ class Element(namedtuple("Element", "atomic_number, name, symbol, mass")):
             self.name, self.symbol, self.atomic_number, self.mass
         )
 
+    def __hash__(self):
+        return hash((self.name, self.symbol,
+                     self.atomic_number, self.mass))
+
+    def __eq__(self, other):
+        return hash(self) == hash(other)
 
 def element_from_symbol(symbol):
     """Search for an element by its symbol
