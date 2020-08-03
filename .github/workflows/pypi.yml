@@ -8,21 +8,26 @@ on:
     types:
       - published
 
-steps:
-  - name: Build dist
-    run: |
-      python setup.py sdist bdist_wheel
 
-  - name: Publish ele to TestPyPI
-    uses: pypa/gh-action-pypi-publish@master
-    with:
-      user: __token__
-      password: ${{ secrets.test_pypi_password }}
-      repository_url: https://test.pypi.org/legacy/
+jobs:
+  publish:
+    runs-on: ubuntu-latest
 
-  - name: Publish ele to PyPI
-    uses: pypa/gh-action-pypi-publish@master
-    with:
-      user: __token__
-      password: ${{ secrets.pypi_password }}
-    if: github.event_name == 'release'
+    steps:
+      - name: Build dist
+        run: |
+          python setup.py sdist bdist_wheel
+
+      - name: Publish ele to TestPyPI
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: __token__
+          password: ${{ secrets.test_pypi_password }}
+          repository_url: https://test.pypi.org/legacy/
+
+      - name: Publish ele to PyPI
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: __token__
+          password: ${{ secrets.pypi_password }}
+        if: github.event_name == 'release'
