@@ -10,7 +10,6 @@ from ele.exceptions import MultiMatchError
 JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
 
 __all__ = (
-    'Element',
     'element_from_name',
     'element_from_mass',
     'element_from_atomic_number',
