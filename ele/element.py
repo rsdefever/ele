@@ -1,5 +1,4 @@
 import json
-from enum import Enum, unique
 import warnings
 
 from collections import namedtuple
@@ -8,6 +7,16 @@ from pathlib import Path
 from ele.exceptions import ElementError
 
 JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
+
+__all__ = (
+    'Element',
+    'element_from_name',
+    'element_from_mass',
+    'element_from_atomic_number',
+    'element_from_symbol',
+    'Elements'
+)
+
 
 class Element(namedtuple("Element", "atomic_number, name, symbol, mass")):
     """Chemical element object
