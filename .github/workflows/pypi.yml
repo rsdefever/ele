@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - 12-git-actions
   release:
     types:
       - published
@@ -22,12 +23,12 @@ jobs:
         uses: pypa/gh-action-pypi-publish@master
         with:
           user: __token__
-          password: ${{ secrets.test_pypi_password }}
+          password: ${{ secrets.TEST_PYPI_PASSWORD }}
           repository_url: https://test.pypi.org/legacy/
 
       - name: Publish ele to PyPI
         uses: pypa/gh-action-pypi-publish@master
         with:
           user: __token__
-          password: ${{ secrets.pypi_password }}
+          password: ${{ secrets.PYPI_PASSWORD }}
         if: github.event_name == 'release'
