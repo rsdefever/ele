@@ -19,7 +19,7 @@ jobs:
 
       - name: Build dist
         run: |
-          pip3 install setuptools
+          pip3 install setuptools wheel
           python3 setup.py sdist bdist_wheel
 
       - name: Publish ele to TestPyPI
