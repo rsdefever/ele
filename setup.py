@@ -1,16 +1,9 @@
 from setuptools import setup, find_packages
 
-#####################################
-VERSION = "0.0.0"
-ISRELEASED = False
-if ISRELEASED:
-    __version__ = VERSION
-else:
-    __version__ = VERSION + ".dev0"
-#####################################
-
 requirements = [
 ]
+
+__version__ = "0.0.0"
 
 setup(
     name="ele",
@@ -22,4 +15,5 @@ setup(
     url="https://github.com/rsdefever/ele",
     install_requires=requirements,
     python_requires=">=3.6, <4",
+    include_package_data=True
 )
