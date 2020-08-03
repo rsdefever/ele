@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 requirements = [
 ]
 
-__version__ = 0.0.0
+__version__ = "0.0.0"
 
 setup(
     name="ele",
