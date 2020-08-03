@@ -9,6 +9,7 @@ from ele import Elements
 from ele.tests.base_test import BaseTest
 
 from ele.exceptions import ElementError
+from ele.exceptions import MultiMatchError
 
 
 class TestElement(BaseTest):
@@ -65,6 +66,14 @@ class TestElement(BaseTest):
         with pytest.warns(UserWarning):
             mg = element_from_mass(24, exact=False)
         assert mg == Magnesium
+        elements = element_from_mass(289.0, duplicates="none")
+        assert elements == None
+        elements = element_from_mass(289.0, duplicates="all")
+        fl = element_from_symbol("Fl")
+        uup = element_from_symbol("Uup")
+        assert elements == (fl, uup)
+        elements = element_from_mass(288.5, duplicates="all", exact=False)
+        assert elements == (fl, uup)
 
     def test_invalid_element_from_mass(self):
         with pytest.raises(ElementError):
@@ -73,6 +82,10 @@ class TestElement(BaseTest):
             na = element_from_mass("11.0")
         with pytest.raises(TypeError):
             na = element_from_mass("sodium")
+        with pytest.raises(TypeError):
+            na = element_from_mass(22.99, duplicates="tuple")
+        with pytest.raises(MultiMatchError):
+            fl = element_from_mass(289.0)
 
     def test_element_attributes(self):
         na = element_from_mass(22.98)
