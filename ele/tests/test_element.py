@@ -101,3 +101,8 @@ class TestElement(BaseTest):
     def test_elements_enum(self):
         for key, val in Elements.symbols_dict.items():
             assert getattr(Elements, key) == val
+
+    def test_hash(self):
+        test_set = set()
+        for symbol in Elements.symbols_dict:
+            test_set.add(Elements.symbols_dict[symbol])
