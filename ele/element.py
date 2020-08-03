@@ -6,6 +6,7 @@ from collections import namedtuple
 from pathlib import Path
 
 from ele.exceptions import ElementError
+from ele.exceptions import MultiMatchError
 
 JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
 
@@ -120,7 +121,7 @@ def element_from_atomic_number(atomic_number):
     return matched_element
 
 
-def element_from_mass(mass, exact=True):
+def element_from_mass(mass, exact=True, duplicates="error"):
     """Search for an element by its mass
 
     Look up an element from a list of known elements by mass (amu).
@@ -132,16 +133,24 @@ def element_from_mass(mass, exact=True):
     exact : bool, optional,  default=True
         Require that the mass match to the first decimal. If False, the
         element with the closest mass will be returned
+    duplicates : enum, optional, default="error"
+        How to handle duplicate elements with the same mass.
+        Error ("error"), return a tuple ("all"), or return
+        None ("none")
 
     Returns
     -------
-    matched_element : element.Element
+    matched_element : element.Element or tuple of element.Element
         Return an element from the periodict table if we find a match,
         otherwise return None
     """
     if not isinstance(mass, (float, int)):
         raise TypeError("`mass` ({mass}) must be a float")
-
+    
+    if duplicates.lower() not in ["error", "all", "none"]:
+        raise TypeError(
+            "`duplicates` must be one of the following: `error`, `all`, `none`"
+        )
     mass = round(float(mass), 1)
 
     if exact:
@@ -157,10 +166,21 @@ def element_from_mass(mass, exact=True):
     if matched_element is None:
         raise ElementError(f"No element with mass {mass}")
 
+    if len(matched_element) == 1:
+        matched_element = matched_element[0]
+    else:
+        if duplicates.lower() == "error":
+            raise MultiMatchError(
+                f"Multiple elements have mass {mass}: {matched_element}"
+            )
+        elif duplicates.lower() == "all":
+            matched_element = tuple(matched_element)
+        elif duplicates.lower() == "none":
+            matched_element = None
+    
     return matched_element
 
 
-# RSD TODO: Where did these values come from???
 elements = []
 with open(JSON_PATH) as json_file:
     elements_dict = json.load(json_file)
@@ -178,7 +198,13 @@ for element_name, element_properties in elements_dict.items():
 symbol_dict = {element.symbol: element for element in elements}
 name_dict = {element.name: element for element in elements}
 atomic_dict = {element.atomic_number: element for element in elements}
-mass_dict = {round(element.mass, 1): element for element in elements}
+mass_dict = {}
+for element in elements:
+    rounded_mass = round(element.mass, 1)
+    if rounded_mass in mass_dict.keys():
+        mass_dict[rounded_mass].append(element)
+    else:
+        mass_dict[rounded_mass] = [element]
 
 
 class Elements(namedtuple('Elements', 'symbols_dict')):
