@@ -1,9 +1,6 @@
 name: Publish ele to PyPI and TestPyPI
 
 on:
-  push:
-    branches:
-      - master
   release:
     types:
       - published
@@ -33,4 +30,4 @@ jobs:
         with:
           user: __token__
           password: ${{ secrets.PYPI_PASSWORD }}
-        if: github.event_name == 'release'
+
