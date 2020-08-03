@@ -4,7 +4,7 @@ from .element import element_from_atomic_number
 from .element import element_from_mass
 from .element import Elements
 
-__version__ = '0.0.0'
+__version__ = '0.1.0'
 
 __all__ = [
     '__version__',
