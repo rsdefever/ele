@@ -7,14 +7,14 @@ from pathlib import Path
 from ele.exceptions import ElementError
 from ele.exceptions import MultiMatchError
 
-JSON_PATH = Path.joinpath(Path(__file__).parent, 'lib/elements.json')
+JSON_PATH = Path.joinpath(Path(__file__).parent, "lib/elements.json")
 
 __all__ = (
-    'element_from_name',
-    'element_from_mass',
-    'element_from_atomic_number',
-    'element_from_symbol',
-    'Elements'
+    "element_from_name",
+    "element_from_mass",
+    "element_from_atomic_number",
+    "element_from_symbol",
+    "Elements",
 )
 
 
@@ -48,11 +48,11 @@ class Element(namedtuple("Element", "atomic_number, name, symbol, mass")):
         )
 
     def __hash__(self):
-        return hash((self.name, self.symbol,
-                     self.atomic_number, self.mass))
+        return hash((self.name, self.symbol, self.atomic_number, self.mass))
 
     def __eq__(self, other):
         return hash(self) == hash(other)
+
 
 def element_from_symbol(symbol):
     """Search for an element by its symbol
@@ -160,7 +160,7 @@ def element_from_mass(mass, exact=True, duplicates="error"):
     """
     if not isinstance(mass, (float, int)):
         raise TypeError("`mass` ({mass}) must be a float")
-    
+
     if duplicates.lower() not in ["error", "all", "none"]:
         raise TypeError(
             "`duplicates` must be one of the following: `error`, `all`, `none`"
@@ -191,7 +191,7 @@ def element_from_mass(mass, exact=True, duplicates="error"):
             matched_element = tuple(matched_element)
         elif duplicates.lower() == "none":
             matched_element = None
-    
+
     return matched_element
 
 
@@ -221,7 +221,7 @@ for element in elements:
         mass_dict[rounded_mass] = [element]
 
 
-class Elements(namedtuple('Elements', 'symbols_dict')):
+class Elements(namedtuple("Elements", "symbols_dict")):
     def __init__(self, symbols_dict):
         super(Elements, self).__init__()
         for key, value in symbols_dict.items():
@@ -229,7 +229,9 @@ class Elements(namedtuple('Elements', 'symbols_dict')):
 
     def __getattr__(self, item):
         if item not in self.symbols_dict:
-            raise AttributeError(f'Element with symbol "{item}" does not exist')
+            raise AttributeError(
+                f'Element with symbol "{item}" does not exist'
+            )
 
 
 Elements = Elements(symbols_dict=symbol_dict)
