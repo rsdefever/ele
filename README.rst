@@ -61,7 +61,7 @@ The elements can also be accessed by symbol as follows:
 Installation
 ~~~~~~~~~~~~
 
-Installation via `pip`:
+Install via `pip`:
 
 .. code-block:: bash
 
