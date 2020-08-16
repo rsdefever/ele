@@ -4,5 +4,5 @@ python:
   install:
     - requirements: docs/requirements.txt
 mkdocs:
-  configuration: docs/mkdocs.yml
+  configuration: mkdocs.yml
   fail_on_warning: false
