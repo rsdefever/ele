@@ -3,4 +3,5 @@ nav:
     - Home: index.md
     - Install: install.md
     - Data sources: sources.md
-theme: readthedocs
+theme:
+    name: material
