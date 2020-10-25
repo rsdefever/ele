@@ -671,9 +671,9 @@
     "atomic number": 112,
     "mass": 285.0
   },
-  "ununtrium": {
-    "name": "ununtrium",
-    "symbol": "Uut",
+  "nihonium": {
+    "name": "nihonium",
+    "symbol": "Nh",
     "atomic number": 113,
     "mass": 286.0
   },
@@ -683,9 +683,9 @@
     "atomic number": 114,
     "mass": 289.0
   },
-  "ununpentium": {
-    "name": "ununpentium",
-    "symbol": "Uup",
+  "moscovium": {
+    "name": "moscovium",
+    "symbol": "Mc",
     "atomic number": 115,
     "mass": 289.0
   },
@@ -695,15 +695,15 @@
     "atomic number": 116,
     "mass": 291.0
   },
-  "ununseptium": {
-    "name": "ununseptium",
-    "symbol": "Uus",
+  "tennessine": {
+    "name": "tennessine",
+    "symbol": "Ts",
     "atomic number": 117,
     "mass": 293.0
   },
-  "ununoctium": {
-    "name": "ununoctium",
-    "symbol": "Uuo",
+  "oganesson": {
+    "name": "oganesson",
+    "symbol": "Og",
     "atomic number": 118,
     "mass": 294.0
   }
