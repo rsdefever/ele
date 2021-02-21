@@ -217,14 +217,13 @@ def infer_element_from_string(string):
     if not isinstance(string, str):
         raise TypeError(f"`string` ({string}) must be a string")
 
-    symbol = string.capitalize()
-    matched_element = symbol_dict.get(symbol)
-    if matched_element is None:
-        name = string.lower()
-        matched_element = name_dict.get(name)
-
-    if matched_element is None:
-        raise ElementError(f"Cannot infer element from '{string}'")
+    try:
+        matched_element = element_from_symbol(string)
+    except ElementError:
+        try:
+            matched_element = element_from_name(string)
+        except ElementError:
+            raise ElementError(f"Unable to match {string} with element name or symbol")
 
     return matched_element
 
