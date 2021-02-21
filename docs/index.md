@@ -29,9 +29,24 @@ na = ele.element_from_atomic_number(11)
 na = ele.element_from_mass(22.990)
 ```
 
-The mass is rounded to a single decimal before comparison. If you wish to
+The mass is rounded to a one digit after the decimal before comparison. If you wish to
 retrieve the element with the mass closest to the specified value you
-may use the `exact=False` keyword.
+may use the `exact=False` keyword. In all cases, not match results
+in an `ElementError`.
+
+**Ele** also offers a function to infer an element from a string with
+well-defined behavior:
+
+```python
+import ele
+na = ele.infer_element_from_string("Na")
+na = ele.infer_element_from_string("sodium")
+```
+
+`infer_element_from_string` first checks if the string matches a
+two-character element symbol. If not, it then checks if the string
+matches a full element name. The function returns the matching element.
+If there is no matching element, an `ElementError` is raised.
 
 Each `Element` has four attributes which can be accessed
 (as demonstrated below for ``na``):
