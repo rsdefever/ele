@@ -4,6 +4,7 @@ from ele import element_from_symbol
 from ele import element_from_name
 from ele import element_from_atomic_number
 from ele import element_from_mass
+from ele import infer_element_from_string
 from ele import Elements
 
 from ele.tests.base_test import BaseTest
@@ -86,6 +87,24 @@ class TestElement(BaseTest):
             na = element_from_mass(22.99, duplicates="tuple")
         with pytest.raises(MultiMatchError):
             fl = element_from_mass(289.0)
+
+    def test_invalid_element_from_string(self):
+        with pytest.raises(TypeError):
+            infer_element_from_string(22)
+
+    def test_unmatched_element_from_string(self):
+        with pytest.raises(ElementError):
+            infer_element_from_string("compound")
+
+    def test_infer_element_from_string(self):
+        f = infer_element_from_string("F")
+        assert f == Elements.F
+
+        c = infer_element_from_string("carbon")
+        assert c == Elements.C
+
+        cl = infer_element_from_string("Chlorine")
+        assert cl == Elements.Cl
 
     def test_element_attributes(self):
         na = element_from_mass(22.98)

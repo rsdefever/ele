@@ -72,7 +72,7 @@ def element_from_symbol(symbol):
         otherwise return None
     """
     if not isinstance(symbol, str):
-        raise TypeError("`symbol` ({symbol}) must be a string")
+        raise TypeError(f"`symbol` ({symbol}) must be a string")
 
     symbol = symbol.capitalize()
     matched_element = symbol_dict.get(symbol)
@@ -100,7 +100,7 @@ def element_from_name(name):
         otherwise return None
     """
     if not isinstance(name, str):
-        raise TypeError("`name` ({name}) must be a string")
+        raise TypeError(f"`name` ({name}) must be a string")
 
     name = name.lower()
     matched_element = name_dict.get(name)
@@ -126,7 +126,7 @@ def element_from_atomic_number(atomic_number):
         Return an element from the periodic table if we find a match,
     """
     if not isinstance(atomic_number, int):
-        raise TypeError("`atomic_number` ({atomic_number}) must be an int")
+        raise TypeError(f"`atomic_number` ({atomic_number}) must be an int")
 
     matched_element = atomic_dict.get(atomic_number)
     if matched_element is None:
@@ -191,6 +191,38 @@ def element_from_mass(mass, exact=True, duplicates="error"):
             matched_element = tuple(matched_element)
         elif duplicates.lower() == "none":
             matched_element = None
+
+    return matched_element
+
+
+def infer_element_from_string(string):
+    """Attempt to infer an element from a string
+
+    First checks if the string matches a two-character
+    element symbol. If not, checks if the string matches
+    an element name. If not, raises an ElementError
+
+    Parameters
+    ----------
+    string : str
+        String to attempt element inference from
+
+    Returns
+    -------
+    matched_element : element.Element
+        Return the matching element from the periodict table
+    """
+    if not isinstance(string, str):
+        raise TypeError(f"`string` ({string}) must be a string")
+
+    symbol = string.capitalize()
+    matched_element = symbol_dict.get(symbol)
+    if matched_element is None:
+        name = string.lower()
+        matched_element = name_dict.get(name)
+
+    if matched_element is None:
+        raise ElementError(f"Cannot infer element from '{string}'")
 
     return matched_element
 
