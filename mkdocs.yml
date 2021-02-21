@@ -6,3 +6,6 @@ nav:
     - Data sources: sources.md
 theme:
     name: material
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences

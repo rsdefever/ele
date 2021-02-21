@@ -21,12 +21,13 @@ change unexpectedly.
 **Ele** only supports a few modes of use. You can retrieve an element
 from the symbol, the name, the atomic number, or the mass (in amu):
 
-	import ele
-	na = ele.element_from_symbol("Na")
-	na = ele.element_from_name("sodium")
-	na = ele.element_from_atomic_number(11)
-	na = ele.element_from_mass(22.990)
-
+```python
+import ele
+na = ele.element_from_symbol("Na")
+na = ele.element_from_name("sodium")
+na = ele.element_from_atomic_number(11)
+na = ele.element_from_mass(22.990)
+```
 
 The mass is rounded to a single decimal before comparison. If you wish to
 retrieve the element with the mass closest to the specified value you
@@ -35,17 +36,21 @@ may use the `exact=False` keyword.
 Each `Element` has four attributes which can be accessed
 (as demonstrated below for ``na``):
 
-	na.name
-	na.symbol
-	na.atomic_number
-	na.mass
-
+```python
+import ele
+na = ele.element_from_symbol("Na")
+na.name
+na.symbol
+na.atomic_number
+na.mass
+```
 
 The elements can also be accessed by symbol as follows:
 
-	import ele
-	na = ele.Elements.Na
-
+```python
+import ele
+na = ele.Elements.Na
+```
 
 ## Installation
 
