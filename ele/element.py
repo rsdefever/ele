@@ -58,7 +58,7 @@ def element_from_symbol(symbol):
     """Search for an element by its symbol
 
     Look up an element from a list of known elements by symbol.
-    Return None if no match found.
+    Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -68,8 +68,7 @@ def element_from_symbol(symbol):
     Returns
     -------
     matched_element : element.Element
-        Return an element from the periodic table if the symbol is found,
-        otherwise return None
+        The matching element from the periodic table
     """
     if not isinstance(symbol, str):
         raise TypeError(f"`symbol` ({symbol}) must be a string")
@@ -86,7 +85,7 @@ def element_from_name(name):
     """Search for an element by its name
 
     Look up an element from a list of known elements by name.
-    Return None if no match found.
+    Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -96,8 +95,7 @@ def element_from_name(name):
     Returns
     -------
     matched_element : element.Element
-        Return an element from the periodic table if the name is found,
-        otherwise return None
+        The matching element from the periodic table
     """
     if not isinstance(name, str):
         raise TypeError(f"`name` ({name}) must be a string")
@@ -114,6 +112,7 @@ def element_from_atomic_number(atomic_number):
     """Search for an element by its atomic number
 
     Look up an element from a list of known elements by atomic number.
+    Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -123,7 +122,7 @@ def element_from_atomic_number(atomic_number):
     Returns
     -------
     matched_element : element.Element
-        Return an element from the periodic table if we find a match,
+        The matching element from the periodic table
     """
     if not isinstance(atomic_number, int):
         raise TypeError(f"`atomic_number` ({atomic_number}) must be an int")
@@ -139,6 +138,10 @@ def element_from_mass(mass, exact=True, duplicates="error"):
     """Search for an element by its mass
 
     Look up an element from a list of known elements by mass (amu).
+    By default, requires that the element mass match exactly
+    to the first digit after the decimal. Using `exact=False`
+    will switch this behavior to return the element with the
+    closest mass.
 
     Parameters
     ----------
@@ -155,8 +158,7 @@ def element_from_mass(mass, exact=True, duplicates="error"):
     Returns
     -------
     matched_element : element.Element or tuple of element.Element
-        Return an element from the periodict table if we find a match,
-        otherwise return None
+        The matching element(s) from the periodic table
     """
     if not isinstance(mass, (float, int)):
         raise TypeError("`mass` ({mass}) must be a float")
@@ -200,7 +202,7 @@ def infer_element_from_string(string):
 
     First checks if the string matches a two-character
     element symbol. If not, checks if the string matches
-    an element name. If not, raises an ElementError
+    an element name. Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -210,7 +212,7 @@ def infer_element_from_string(string):
     Returns
     -------
     matched_element : element.Element
-        Return the matching element from the periodict table
+        The matching element from the periodic table
     """
     if not isinstance(string, str):
         raise TypeError(f"`string` ({string}) must be a string")
