@@ -48,7 +48,7 @@ two-character element symbol. If not, it then checks if the string
 matches a full element name. The function returns the matching element.
 If there is no matching element, an `ElementError` is raised.
 
-Each `Element` has four attributes which can be accessed
+Each `Element` has six attributes which can be accessed
 (as demonstrated below for ``na``):
 
 ```python
@@ -58,6 +58,8 @@ na.name
 na.symbol
 na.atomic_number
 na.mass
+na.radius_bondi
+na.radius_alvarez
 ```
 
 The elements can also be accessed by symbol as follows:
