@@ -75,7 +75,9 @@ def element_from_symbol(symbol):
         If no match is found
     """
     if not isinstance(symbol, str):
-        raise TypeError("`symbol` ({symbol}) must be a string")
+        raise TypeError(
+            f"`string` ({symbol}) must be a string.  Provided {type(symbol).__name__}."
+        )
 
     symbol = symbol.capitalize()
     matched_element = symbol_dict.get(symbol)
@@ -106,7 +108,9 @@ def element_from_name(name):
         If no match is found
     """
     if not isinstance(name, str):
-        raise TypeError("`name` ({name}) must be a string")
+        raise TypeError(
+            f"`string` ({name}) must be a string.  Provided {type(name).__name__}."
+        )
 
     name = name.lower()
     matched_element = name_dict.get(name)
@@ -137,7 +141,9 @@ def element_from_atomic_number(atomic_number):
         If no match is found
     """
     if not isinstance(atomic_number, int):
-        raise TypeError("`atomic_number` ({atomic_number}) must be an int")
+        raise TypeError(
+            f"`string` ({atomic_number}) must be an integer.  Provided {type(atomic_number).__name__}."
+        )
 
     matched_element = atomic_dict.get(atomic_number)
     if matched_element is None:
@@ -172,8 +178,10 @@ def element_from_mass(mass, exact=True, duplicates="error"):
     matched_element : element.Element or tuple of element.Element
         The matching element(s) from the periodic table
     """
-    if not isinstance(mass, (float, int)):
-        raise TypeError("`mass` ({mass}) must be a float")
+    if not isinstance(mass, (int, float)):
+        raise TypeError(
+            f"`string` ({mass}) must be a float.  Provided {type(mass).__name__}."
+        )
 
     if duplicates.lower() not in ["error", "all", "none"]:
         raise TypeError(
@@ -233,7 +241,7 @@ def infer_element_from_string(string):
     """
     if not isinstance(string, str):
         raise TypeError(
-            f"`string` ({string}) must be a string.  Provided {type(string).__name__}"
+            f"`string` ({string}) must be a string.  Provided {type(string).__name__}."
         )
 
     try:
