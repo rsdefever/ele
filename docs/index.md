@@ -31,7 +31,7 @@ na = ele.element_from_mass(22.990)
 
 The mass is rounded to a one digit after the decimal before comparison. If you wish to
 retrieve the element with the mass closest to the specified value you
-may use the `exact=False` keyword. In all cases, not match results
+may use the `exact=False` keyword. In all cases, no matches results
 in an `ElementError`.
 
 **Ele** also offers a function to infer an element from a string with
