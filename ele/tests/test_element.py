@@ -112,6 +112,13 @@ class TestElement(BaseTest):
         assert na.atomic_number == 11
         assert na.name == "sodium"
         assert na.symbol == "Na"
+        assert na.radius_bondi == 2.27
+        assert na.radius_alvarez == 2.50
+
+    def test_missing_attribute(self):
+        uuo = element_from_atomic_number(118)
+        assert uuo.radius_bondi is None
+        assert uuo.radius_alvarez is None
 
     def test_repr(self):
         na = element_from_mass(22.98)

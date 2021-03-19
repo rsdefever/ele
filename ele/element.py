@@ -18,7 +18,7 @@ __all__ = (
 )
 
 
-class Element(namedtuple("Element", "atomic_number, name, symbol, mass")):
+class Element(namedtuple("Element", "atomic_number, name, symbol, mass, radius_bondi, radius_alvarez")):
     """Chemical element object
 
     Template to create a chemical element.
@@ -258,6 +258,8 @@ for element_name, element_properties in elements_dict.items():
             name=element_properties["name"],
             symbol=element_properties["symbol"],
             mass=element_properties["mass"],
+            radius_bondi=element_properties["radius_bondi"],
+            radius_alvarez=element_properties["radius_alvarez"],
         )
     )
 
