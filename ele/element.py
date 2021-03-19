@@ -71,7 +71,7 @@ def element_from_symbol(symbol):
         The matching element from the periodic table
     """
     if not isinstance(symbol, str):
-        raise TypeError(f"`symbol` ({symbol}) must be a string")
+        raise TypeError("`symbol` ({symbol}) must be a string")
 
     symbol = symbol.capitalize()
     matched_element = symbol_dict.get(symbol)
@@ -98,7 +98,7 @@ def element_from_name(name):
         The matching element from the periodic table
     """
     if not isinstance(name, str):
-        raise TypeError(f"`name` ({name}) must be a string")
+        raise TypeError("`name` ({name}) must be a string")
 
     name = name.lower()
     matched_element = name_dict.get(name)
@@ -125,7 +125,7 @@ def element_from_atomic_number(atomic_number):
         The matching element from the periodic table
     """
     if not isinstance(atomic_number, int):
-        raise TypeError(f"`atomic_number` ({atomic_number}) must be an int")
+        raise TypeError("`atomic_number` ({atomic_number}) must be an int")
 
     matched_element = atomic_dict.get(atomic_number)
     if matched_element is None:
@@ -202,7 +202,7 @@ def infer_element_from_string(string):
 
     First checks if the string matches a two-character
     element symbol. If not, checks if the string matches
-    an element name. Raises an ElementError if no match is found.
+    an element name.
 
     Parameters
     ----------
@@ -213,9 +213,16 @@ def infer_element_from_string(string):
     -------
     matched_element : element.Element
         The matching element from the periodic table
+
+    Raises
+    ------
+    ElementError
+        If no match is found
     """
     if not isinstance(string, str):
-        raise TypeError(f"`string` ({string}) must be a string")
+        raise TypeError(
+            f"`string` ({string}) must be a string.  Provided {type(string).__name__}"
+        )
 
     try:
         matched_element = element_from_symbol(string)
