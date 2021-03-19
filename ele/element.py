@@ -58,7 +58,6 @@ def element_from_symbol(symbol):
     """Search for an element by its symbol
 
     Look up an element from a list of known elements by symbol.
-    Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -69,6 +68,11 @@ def element_from_symbol(symbol):
     -------
     matched_element : element.Element
         The matching element from the periodic table
+
+    Raises
+    ------
+    ElementError
+        If no match is found
     """
     if not isinstance(symbol, str):
         raise TypeError("`symbol` ({symbol}) must be a string")
@@ -85,7 +89,6 @@ def element_from_name(name):
     """Search for an element by its name
 
     Look up an element from a list of known elements by name.
-    Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -96,6 +99,11 @@ def element_from_name(name):
     -------
     matched_element : element.Element
         The matching element from the periodic table
+
+    Raises
+    ------
+    ElementError
+        If no match is found
     """
     if not isinstance(name, str):
         raise TypeError("`name` ({name}) must be a string")
@@ -112,7 +120,6 @@ def element_from_atomic_number(atomic_number):
     """Search for an element by its atomic number
 
     Look up an element from a list of known elements by atomic number.
-    Raises an ElementError if no match is found.
 
     Parameters
     ----------
@@ -123,6 +130,11 @@ def element_from_atomic_number(atomic_number):
     -------
     matched_element : element.Element
         The matching element from the periodic table
+
+    Raises
+    ------
+    ElementError
+        If no match is found
     """
     if not isinstance(atomic_number, int):
         raise TypeError("`atomic_number` ({atomic_number}) must be an int")
