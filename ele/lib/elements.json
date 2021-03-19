@@ -228,7 +228,7 @@
     "symbol": "Cu",
     "atomic number": 29,
     "mass": 63.546,
-    "radius_bondi": 1.40,
+    "radius_bondi": 1.4,
     "radius_alvarez": 2.38
   },
   "zinc": {
@@ -789,7 +789,7 @@
     "atomic number": 99,
     "mass": 252.0,
     "radius_bondi": null,
-    "radius_alvarez": 2.70
+    "radius_alvarez": 2.7
   },
   "fermium": {
     "name": "fermium",
