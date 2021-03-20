@@ -250,8 +250,10 @@ def infer_element_from_string(string):
 elements = []
 with open(JSON_PATH) as json_file:
     elements_dict = json.load(json_file)
+    elements_dict = {int(key): value for key, value in elements_dict.items()}
 
-for element_name, element_properties in elements_dict.items():
+for atomic_number, element_properties in elements_dict.items():
+    assert atomic_number == element_properties["atomic number"]
     elements.append(
         Element(
             atomic_number=element_properties["atomic number"],
