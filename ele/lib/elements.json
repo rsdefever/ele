@@ -895,9 +895,9 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununtrium": {
-    "name": "ununtrium",
-    "symbol": "Uut",
+  "nihonium": {
+    "name": "nihonium",
+    "symbol": "Nh",
     "atomic number": 113,
     "mass": 286.0,
     "radius_bondi": null,
@@ -911,9 +911,9 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununpentium": {
-    "name": "ununpentium",
-    "symbol": "Uup",
+  "moscovium": {
+    "name": "moscovium",
+    "symbol": "Mc",
     "atomic number": 115,
     "mass": 289.0,
     "radius_bondi": null,
@@ -927,17 +927,17 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununseptium": {
-    "name": "ununseptium",
-    "symbol": "Uus",
+  "tennessine": {
+    "name": "tennessine",
+    "symbol": "Ts",
     "atomic number": 117,
     "mass": 293.0,
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununoctium": {
-    "name": "ununoctium",
-    "symbol": "Uuo",
+  "oganesson": {
+    "name": "oganesson",
+    "symbol": "Og",
     "atomic number": 118,
     "mass": 294.0,
     "radius_bondi": null,
