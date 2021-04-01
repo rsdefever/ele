@@ -180,7 +180,7 @@ def element_from_mass(mass, exact=True, duplicates="error"):
     """
     if not isinstance(mass, (int, float)):
         raise TypeError(
-            f"`string` ({mass}) must be a float.  Provided {type(mass).__name__}."
+            f"`string` ({mass}) must be a number.  Provided {type(mass).__name__}."
         )
 
     if duplicates.lower() not in ["error", "all", "none"]:
