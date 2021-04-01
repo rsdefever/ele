@@ -5,7 +5,7 @@ from .element import element_from_mass
 from .element import infer_element_from_string
 from .element import Elements
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = [
     "__version__",
