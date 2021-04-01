@@ -1,5 +1,5 @@
 {
-  "hydrogen": {
+  "1": {
     "name": "hydrogen",
     "symbol": "H",
     "atomic number": 1,
@@ -7,7 +7,7 @@
     "radius_bondi": 1.20,
     "radius_alvarez": 1.20
   },
-  "helium": {
+  "2": {
     "name": "helium",
     "symbol": "He",
     "atomic number": 2,
@@ -15,7 +15,7 @@
     "radius_bondi": 1.40,
     "radius_alvarez": 1.43
   },
-  "lithium": {
+  "3": {
     "name": "lithium",
     "symbol": "Li",
     "atomic number": 3,
@@ -23,7 +23,7 @@
     "radius_bondi": 1.82,
     "radius_alvarez": 2.12
   },
-  "beryllium": {
+  "4": {
     "name": "beryllium",
     "symbol": "Be",
     "atomic number": 4,
@@ -31,7 +31,7 @@
     "radius_bondi": null,
     "radius_alvarez": 1.98
   },
-  "boron": {
+  "5": {
     "name": "boron",
     "symbol": "B",
     "atomic number": 5,
@@ -39,7 +39,7 @@
     "radius_bondi": null,
     "radius_alvarez": 1.91
   },
-  "carbon": {
+  "6": {
     "name": "carbon",
     "symbol": "C",
     "atomic number": 6,
@@ -47,7 +47,7 @@
     "radius_bondi": 1.70,
     "radius_alvarez": 1.77
   },
-  "nitrogen": {
+  "7": {
     "name": "nitrogen",
     "symbol": "N",
     "atomic number": 7,
@@ -55,7 +55,7 @@
     "radius_bondi": 1.55,
     "radius_alvarez": 1.66
   },
-  "oxygen": {
+  "8": {
     "name": "oxygen",
     "symbol": "O",
     "atomic number": 8,
@@ -63,7 +63,7 @@
     "radius_bondi": 1.52,
     "radius_alvarez": 1.50
   },
-  "fluorine": {
+  "9": {
     "name": "fluorine",
     "symbol": "F",
     "atomic number": 9,
@@ -71,7 +71,7 @@
     "radius_bondi": 1.47,
     "radius_alvarez": 1.46
   },
-  "neon": {
+  "10": {
     "name": "neon",
     "symbol": "Ne",
     "atomic number": 10,
@@ -79,7 +79,7 @@
     "radius_bondi": 1.54,
     "radius_alvarez": 1.58
   },
-  "sodium": {
+  "11": {
     "name": "sodium",
     "symbol": "Na",
     "atomic number": 11,
@@ -87,7 +87,7 @@
     "radius_bondi": 2.27,
     "radius_alvarez": 2.50
   },
-  "magnesium": {
+  "12": {
     "name": "magnesium",
     "symbol": "Mg",
     "atomic number": 12,
@@ -95,7 +95,7 @@
     "radius_bondi": 1.73,
     "radius_alvarez": 2.51
   },
-  "aluminum": {
+  "13": {
     "name": "aluminum",
     "symbol": "Al",
     "atomic number": 13,
@@ -103,7 +103,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.25
   },
-  "silicon": {
+  "14": {
     "name": "silicon",
     "symbol": "Si",
     "atomic number": 14,
@@ -111,7 +111,7 @@
     "radius_bondi": 2.10,
     "radius_alvarez": 2.19
   },
-  "phosphorus": {
+  "15": {
     "name": "phosphorus",
     "symbol": "P",
     "atomic number": 15,
@@ -119,7 +119,7 @@
     "radius_bondi": 1.80,
     "radius_alvarez": 1.90
   },
-  "sulfur": {
+  "16": {
     "name": "sulfur",
     "symbol": "S",
     "atomic number": 16,
@@ -127,7 +127,7 @@
     "radius_bondi": 1.80,
     "radius_alvarez": 1.89
   },
-  "chlorine": {
+  "17": {
     "name": "chlorine",
     "symbol": "Cl",
     "atomic number": 17,
@@ -135,7 +135,7 @@
     "radius_bondi": 1.75,
     "radius_alvarez": 1.82
   },
-  "argon": {
+  "18": {
     "name": "argon",
     "symbol": "Ar",
     "atomic number": 18,
@@ -143,7 +143,7 @@
     "radius_bondi": 1.88,
     "radius_alvarez": 1.83
   },
-  "potassium": {
+  "19": {
     "name": "potassium",
     "symbol": "K",
     "atomic number": 19,
@@ -151,7 +151,7 @@
     "radius_bondi": 2.75,
     "radius_alvarez": 2.73
   },
-  "calcium": {
+  "20": {
     "name": "calcium",
     "symbol": "Ca",
     "atomic number": 20,
@@ -159,7 +159,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.62
   },
-  "scandium": {
+  "21": {
     "name": "scandium",
     "symbol": "Sc",
     "atomic number": 21,
@@ -167,7 +167,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.58
   },
-  "titanium": {
+  "22": {
     "name": "titanium",
     "symbol": "Ti",
     "atomic number": 22,
@@ -175,7 +175,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.46
   },
-  "vanadium": {
+  "23": {
     "name": "vanadium",
     "symbol": "V",
     "atomic number": 23,
@@ -183,7 +183,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.42
   },
-  "chromium": {
+  "24": {
     "name": "chromium",
     "symbol": "Cr",
     "atomic number": 24,
@@ -191,7 +191,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.45
   },
-  "manganese": {
+  "25": {
     "name": "manganese",
     "symbol": "Mn",
     "atomic number": 25,
@@ -199,7 +199,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.45
   },
-  "iron": {
+  "26": {
     "name": "iron",
     "symbol": "Fe",
     "atomic number": 26,
@@ -207,7 +207,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.44
   },
-  "cobalt": {
+  "27": {
     "name": "cobalt",
     "symbol": "Co",
     "atomic number": 27,
@@ -215,7 +215,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.40
   },
-  "nickel": {
+  "28": {
     "name": "nickel",
     "symbol": "Ni",
     "atomic number": 28,
@@ -223,7 +223,7 @@
     "radius_bondi": 1.63,
     "radius_alvarez": 2.40
   },
-  "copper": {
+  "29": {
     "name": "copper",
     "symbol": "Cu",
     "atomic number": 29,
@@ -231,7 +231,7 @@
     "radius_bondi": 1.4,
     "radius_alvarez": 2.38
   },
-  "zinc": {
+  "30": {
     "name": "zinc",
     "symbol": "Zn",
     "atomic number": 30,
@@ -239,7 +239,7 @@
     "radius_bondi": 1.39,
     "radius_alvarez": 2.39
   },
-  "gallium": {
+  "31": {
     "name": "gallium",
     "symbol": "Ga",
     "atomic number": 31,
@@ -247,7 +247,7 @@
     "radius_bondi": 1.87,
     "radius_alvarez": 2.32
   },
-  "germanium": {
+  "32": {
     "name": "germanium",
     "symbol": "Ge",
     "atomic number": 32,
@@ -255,7 +255,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.29
   },
-  "arsenic": {
+  "33": {
     "name": "arsenic",
     "symbol": "As",
     "atomic number": 33,
@@ -263,7 +263,7 @@
     "radius_bondi": 1.85,
     "radius_alvarez": 1.88
   },
-  "selenium": {
+  "34": {
     "name": "selenium",
     "symbol": "Se",
     "atomic number": 34,
@@ -271,7 +271,7 @@
     "radius_bondi": 1.90,
     "radius_alvarez": 1.82
   },
-  "bromine": {
+  "35": {
     "name": "bromine",
     "symbol": "Br",
     "atomic number": 35,
@@ -279,7 +279,7 @@
     "radius_bondi": 1.85,
     "radius_alvarez": 1.86
   },
-  "krypton": {
+  "36": {
     "name": "krypton",
     "symbol": "Kr",
     "atomic number": 36,
@@ -287,7 +287,7 @@
     "radius_bondi": 2.02,
     "radius_alvarez": 2.25
   },
-  "rubidium": {
+  "37": {
     "name": "rubidium",
     "symbol": "Rb",
     "atomic number": 37,
@@ -295,7 +295,7 @@
     "radius_bondi": null,
     "radius_alvarez": 3.21
   },
-  "strontium": {
+  "38": {
     "name": "strontium",
     "symbol": "Sr",
     "atomic number": 38,
@@ -303,7 +303,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.84
   },
-  "yttrium": {
+  "39": {
     "name": "yttrium",
     "symbol": "Y",
     "atomic number": 39,
@@ -311,7 +311,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.75
   },
-  "zirconium": {
+  "40": {
     "name": "zirconium",
     "symbol": "Zr",
     "atomic number": 40,
@@ -319,7 +319,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.52
   },
-  "niobium": {
+  "41": {
     "name": "niobium",
     "symbol": "Nb",
     "atomic number": 41,
@@ -327,7 +327,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.56
   },
-  "molybdenum": {
+  "42": {
     "name": "molybdenum",
     "symbol": "Mo",
     "atomic number": 42,
@@ -335,7 +335,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.45
   },
-  "technetium": {
+  "43": {
     "name": "technetium",
     "symbol": "Tc",
     "atomic number": 43,
@@ -343,7 +343,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.44
   },
-  "ruthenium": {
+  "44": {
     "name": "ruthenium",
     "symbol": "Ru",
     "atomic number": 44,
@@ -351,7 +351,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.46
   },
-  "rhodium": {
+  "45": {
     "name": "rhodium",
     "symbol": "Rh",
     "atomic number": 45,
@@ -359,7 +359,7 @@
     "radius_bondi":  null,
     "radius_alvarez": 2.44
   },
-  "palladium": {
+  "46": {
     "name": "palladium",
     "symbol": "Pd",
     "atomic number": 46,
@@ -367,7 +367,7 @@
     "radius_bondi": 1.63,
     "radius_alvarez": 2.15
   },
-  "silver": {
+  "47": {
     "name": "silver",
     "symbol": "Ag",
     "atomic number": 47,
@@ -375,7 +375,7 @@
     "radius_bondi": 1.72,
     "radius_alvarez": 2.53
   },
-  "cadmium": {
+  "48": {
     "name": "cadmium",
     "symbol": "Cd",
     "atomic number": 48,
@@ -383,7 +383,7 @@
     "radius_bondi": 1.62,
     "radius_alvarez": 2.49
   },
-  "indium": {
+  "49": {
     "name": "indium",
     "symbol": "In",
     "atomic number": 49,
@@ -391,7 +391,7 @@
     "radius_bondi": 1.93,
     "radius_alvarez": 2.43
   },
-  "tin": {
+  "50": {
     "name": "tin",
     "symbol": "Sn",
     "atomic number": 50,
@@ -399,7 +399,7 @@
     "radius_bondi": 2.17,
     "radius_alvarez": 2.42
   },
-  "antimony": {
+  "51": {
     "name": "antimony",
     "symbol": "Sb",
     "atomic number": 51,
@@ -407,7 +407,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.47
   },
-  "tellurium": {
+  "52": {
     "name": "tellurium",
     "symbol": "Te",
     "atomic number": 52,
@@ -415,7 +415,7 @@
     "radius_bondi": 2.06,
     "radius_alvarez": 1.99
   },
-  "iodine": {
+  "53": {
     "name": "iodine",
     "symbol": "I",
     "atomic number": 53,
@@ -423,7 +423,7 @@
     "radius_bondi": 1.98,
     "radius_alvarez": 2.04
   },
-  "xenon": {
+  "54": {
     "name": "xenon",
     "symbol": "Xe",
     "atomic number": 54,
@@ -431,7 +431,7 @@
     "radius_bondi": 2.16,
     "radius_alvarez": 2.06
   },
-  "cesium": {
+  "55": {
     "name": "cesium",
     "symbol": "Cs",
     "atomic number": 55,
@@ -439,7 +439,7 @@
     "radius_bondi": null,
     "radius_alvarez": 3.48
   },
-  "barium": {
+  "56": {
     "name": "barium",
     "symbol": "Ba",
     "atomic number": 56,
@@ -447,7 +447,7 @@
     "radius_bondi": null,
     "radius_alvarez": 3.03
   },
-  "lanthanum": {
+  "57": {
     "name": "lanthanum",
     "symbol": "La",
     "atomic number": 57,
@@ -455,7 +455,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.98
   },
-  "cerium": {
+  "58": {
     "name": "cerium",
     "symbol": "Ce",
     "atomic number": 58,
@@ -463,7 +463,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.88
   },
-  "praseodymium": {
+  "59": {
     "name": "praseodymium",
     "symbol": "Pr",
     "atomic number": 59,
@@ -471,7 +471,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.92
   },
-  "neodymium": {
+  "60": {
     "name": "neodymium",
     "symbol": "Nd",
     "atomic number": 60,
@@ -479,7 +479,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.95
   },
-  "promethium": {
+  "61": {
     "name": "promethium",
     "symbol": "Pm",
     "atomic number": 61,
@@ -487,7 +487,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "samarium": {
+  "62": {
     "name": "samarium",
     "symbol": "Sm",
     "atomic number": 62,
@@ -495,7 +495,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.90
   },
-  "europium": {
+  "63": {
     "name": "europium",
     "symbol": "Eu",
     "atomic number": 63,
@@ -503,7 +503,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.87
   },
-  "gadolinium": {
+  "64": {
     "name": "gadolinium",
     "symbol": "Gd",
     "atomic number": 64,
@@ -511,7 +511,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.83
   },
-  "terbium": {
+  "65": {
     "name": "terbium",
     "symbol": "Tb",
     "atomic number": 65,
@@ -519,7 +519,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.79
   },
-  "dysprosium": {
+  "66": {
     "name": "dysprosium",
     "symbol": "Dy",
     "atomic number": 66,
@@ -527,7 +527,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.87
   },
-  "holmium": {
+  "67": {
     "name": "holmium",
     "symbol": "Ho",
     "atomic number": 67,
@@ -535,7 +535,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.81
   },
-  "erbium": {
+  "68": {
     "name": "erbium",
     "symbol": "Er",
     "atomic number": 68,
@@ -543,7 +543,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.83
   },
-  "thulium": {
+  "69": {
     "name": "thulium",
     "symbol": "Tm",
     "atomic number": 69,
@@ -551,7 +551,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.79
   },
-  "ytterbium": {
+  "70": {
     "name": "ytterbium",
     "symbol": "Yb",
     "atomic number": 70,
@@ -559,7 +559,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.80
   },
-  "lutetium": {
+  "71": {
     "name": "lutetium",
     "symbol": "Lu",
     "atomic number": 71,
@@ -567,7 +567,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.74
   },
-  "hafnium": {
+  "72": {
     "name": "hafnium",
     "symbol": "Hf",
     "atomic number": 72,
@@ -575,7 +575,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.63
   },
-  "tantalum": {
+  "73": {
     "name": "tantalum",
     "symbol": "Ta",
     "atomic number": 73,
@@ -583,7 +583,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.53
   },
-  "tungsten": {
+  "74": {
     "name": "tungsten",
     "symbol": "W",
     "atomic number": 74,
@@ -591,7 +591,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.57
   },
-  "rhenium": {
+  "75": {
     "name": "rhenium",
     "symbol": "Re",
     "atomic number": 75,
@@ -599,7 +599,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.49
   },
-  "osmium": {
+  "76": {
     "name": "osmium",
     "symbol": "Os",
     "atomic number": 76,
@@ -607,7 +607,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.48
   },
-  "iridium": {
+  "77": {
     "name": "iridium",
     "symbol": "Ir",
     "atomic number": 77,
@@ -615,7 +615,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.41
   },
-  "platinum": {
+  "78": {
     "name": "platinum",
     "symbol": "Pt",
     "atomic number": 78,
@@ -623,7 +623,7 @@
     "radius_bondi": 1.72,
     "radius_alvarez": 2.29
   },
-  "gold": {
+  "79": {
     "name": "gold",
     "symbol": "Au",
     "atomic number": 79,
@@ -631,7 +631,7 @@
     "radius_bondi": 1.66,
     "radius_alvarez": 2.32
   },
-  "mercury": {
+  "80": {
     "name": "mercury",
     "symbol": "Hg",
     "atomic number": 80,
@@ -639,7 +639,7 @@
     "radius_bondi": 1.70,
     "radius_alvarez": 2.45
   },
-  "thallium": {
+  "81": {
     "name": "thallium",
     "symbol": "Tl",
     "atomic number": 81,
@@ -647,7 +647,7 @@
     "radius_bondi": 1.96,
     "radius_alvarez": 2.47
   },
-  "lead": {
+  "82": {
     "name": "lead",
     "symbol": "Pb",
     "atomic number": 82,
@@ -655,7 +655,7 @@
     "radius_bondi": 2.02,
     "radius_alvarez": 2.60
   },
-  "bismuth": {
+  "83": {
     "name": "bismuth",
     "symbol": "Bi",
     "atomic number": 83,
@@ -663,7 +663,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.54
   },
-  "polonium": {
+  "84": {
     "name": "polonium",
     "symbol": "Po",
     "atomic number": 84,
@@ -671,7 +671,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "astatine": {
+  "85": {
     "name": "astatine",
     "symbol": "At",
     "atomic number": 85,
@@ -679,7 +679,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "radon": {
+  "86": {
     "name": "radon",
     "symbol": "Rn",
     "atomic number": 86,
@@ -687,7 +687,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "francium": {
+  "87": {
     "name": "francium",
     "symbol": "Fr",
     "atomic number": 87,
@@ -695,7 +695,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "radium": {
+  "88": {
     "name": "radium",
     "symbol": "Ra",
     "atomic number": 88,
@@ -703,7 +703,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "actinium": {
+  "89": {
     "name": "actinium",
     "symbol": "Ac",
     "atomic number": 89,
@@ -711,7 +711,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.8
   },
-  "thorium": {
+  "90": {
     "name": "thorium",
     "symbol": "Th",
     "atomic number": 90,
@@ -719,7 +719,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.93
   },
-  "proactinium": {
+  "91": {
     "name": "proactinium",
     "symbol": "Pa",
     "atomic number": 91,
@@ -727,7 +727,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.88
   },
-  "uranium": {
+  "92": {
     "name": "uranium",
     "symbol": "U",
     "atomic number": 92,
@@ -735,7 +735,7 @@
     "radius_bondi": 1.86,
     "radius_alvarez": 2.71
   },
-  "neptunium": {
+  "93": {
     "name": "neptunium",
     "symbol": "Np",
     "atomic number": 93,
@@ -743,7 +743,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.82
   },
-  "plutonium": {
+  "94": {
     "name": "plutonium",
     "symbol": "Pu",
     "atomic number": 94,
@@ -751,7 +751,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.81
   },
-  "americium": {
+  "95": {
     "name": "americium",
     "symbol": "Am",
     "atomic number": 95,
@@ -759,7 +759,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.83
   },
-  "curium": {
+  "96": {
     "name": "curium",
     "symbol": "Cm",
     "atomic number": 96,
@@ -767,7 +767,7 @@
     "radius_bondi": null,
     "radius_alvarez": 3.05
   },
-  "berkelium": {
+  "97": {
     "name": "berkelium",
     "symbol": "Bk",
     "atomic number": 97,
@@ -775,7 +775,7 @@
     "radius_bondi": null,
     "radius_alvarez": 3.4
   },
-  "californium": {
+  "98": {
     "name": "californium",
     "symbol": "Cf",
     "atomic number": 98,
@@ -783,7 +783,7 @@
     "radius_bondi": null,
     "radius_alvarez": 3.05
   },
-  "einsteinium": {
+  "99": {
     "name": "einsteinium",
     "symbol": "Es",
     "atomic number": 99,
@@ -791,7 +791,7 @@
     "radius_bondi": null,
     "radius_alvarez": 2.7
   },
-  "fermium": {
+  "100": {
     "name": "fermium",
     "symbol": "Fm",
     "atomic number": 100,
@@ -799,7 +799,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "mendelevium": {
+  "101": {
     "name": "mendelevium",
     "symbol": "Md",
     "atomic number": 101,
@@ -807,7 +807,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "nobelium": {
+  "102": {
     "name": "nobelium",
     "symbol": "No",
     "atomic number": 102,
@@ -815,7 +815,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "lawrencium": {
+  "103": {
     "name": "lawrencium",
     "symbol": "Lr",
     "atomic number": 103,
@@ -823,7 +823,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "rutherfordium": {
+  "104": {
     "name": "rutherfordium",
     "symbol": "Rf",
     "atomic number": 104,
@@ -831,7 +831,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "dubnium": {
+  "105": {
     "name": "dubnium",
     "symbol": "Db",
     "atomic number": 105,
@@ -839,7 +839,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "seaborgium": {
+  "106": {
     "name": "seaborgium",
     "symbol": "Sg",
     "atomic number": 106,
@@ -847,7 +847,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "bohrium": {
+  "107": {
     "name": "bohrium",
     "symbol": "Bh",
     "atomic number": 107,
@@ -855,7 +855,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "hassium": {
+  "108": {
     "name": "hassium",
     "symbol": "Hs",
     "atomic number": 108,
@@ -863,7 +863,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "meitnerium": {
+  "109": {
     "name": "meitnerium",
     "symbol": "Mt",
     "atomic number": 109,
@@ -871,7 +871,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "darmstadtium": {
+  "110": {
     "name": "darmstadtium",
     "symbol": "Ds",
     "atomic number": 110,
@@ -879,7 +879,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "roentgenium": {
+  "111": {
     "name": "roentgenium",
     "symbol": "Rg",
     "atomic number": 111,
@@ -887,7 +887,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "copernicium": {
+  "112": {
     "name": "copernicium",
     "symbol": "Cn",
     "atomic number": 112,
@@ -895,7 +895,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununtrium": {
+  "113": {
     "name": "ununtrium",
     "symbol": "Uut",
     "atomic number": 113,
@@ -903,7 +903,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "flerovium": {
+  "114": {
     "name": "flerovium",
     "symbol": "Fl",
     "atomic number": 114,
@@ -911,7 +911,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununpentium": {
+  "115": {
     "name": "ununpentium",
     "symbol": "Uup",
     "atomic number": 115,
@@ -919,7 +919,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "livermorium": {
+  "116": {
     "name": "livermorium",
     "symbol": "Lv",
     "atomic number": 116,
@@ -927,7 +927,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununseptium": {
+  "117": {
     "name": "ununseptium",
     "symbol": "Uus",
     "atomic number": 117,
@@ -935,7 +935,7 @@
     "radius_bondi": null,
     "radius_alvarez": null
   },
-  "ununoctium": {
+  "118": {
     "name": "ununoctium",
     "symbol": "Uuo",
     "atomic number": 118,
